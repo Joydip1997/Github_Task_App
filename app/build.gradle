@@ -59,11 +59,6 @@ dependencies {
     // Architectural Components
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
-    def room_version = "2.2.5"
-
-    implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
-
 
 
     // Coroutines
@@ -83,10 +78,4 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.1"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.1"
 
-    // Glide
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    kapt 'com.github.bumptech.glide:compiler:4.11.0'
-
-    implementation 'androidx.room:room-ktx:2.2.1'
-    kapt "androidx.room:room-compiler:2.2.1"
 }
