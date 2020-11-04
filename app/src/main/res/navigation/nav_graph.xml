@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/commitListViewFragment">
+
+    <fragment
+        android:id="@+id/commitListViewFragment"
+        android:name="com.androdude.githubtaskapp.UI.Fragments.CommitListViewFragment"
+        android:label="CommitListViewFragment" >
+        <action
+            android:id="@+id/action_commitListViewFragment_to_commitDetailsFragment"
+            app:destination="@id/commitDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commitDetailsFragment"
+        android:name="com.androdude.githubtaskapp.UI.Fragments.CommitDetailsFragment"
+        android:label="CommitDetailsFragment" >
+        <argument
+            android:name="GithubResponseItem"
+            app:argType="com.androdude.githubtaskapp.DATA.Model.GithubResponseItem" />
+    </fragment>
+</navigation>
